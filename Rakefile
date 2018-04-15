@@ -6,6 +6,10 @@ Rake::TestTask.new do |t|
   t.warning = false
 end
 
+require 'rubocop/rake_task'
+
+RuboCop::RakeTask.new(:rubocop)
+
 namespace :deploy do
   desc 'Deploy the app'
   task :production do

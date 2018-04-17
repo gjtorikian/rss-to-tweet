@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require File.expand_path '../test_helper.rb', __FILE__
 require 'cgi'
 
@@ -44,7 +46,7 @@ class TweetTest < MiniTest::Test
   end
 
   def test_tweet_when_date_in_past
-    with_env({ LAST_CHECKED_DATE: '2018-04-03T07:00:00Z',RSS_PATH: File.join(fixtures_path, 'changes.atom') }) do
+    with_env({ LAST_CHECKED_DATE: '2018-04-03T07:00:00Z', RSS_PATH: File.join(fixtures_path, 'changes.atom') }) do
       text = 'Self-serve Onboarding for the GitHub Marketplace https://developer.github.com/changes/2018-04-06-self-serve-onboarding/'
       stub_tweet(text)
       post '/rss-to-tweet', @data, { 'HTTP_X_GITHUB_EVENT' => 'page_build', 'HTTP_X_HUB_SIGNATURE' => 'sha1=bf37c5205a39205d8cb4f70579be3fd79a1a74bb' }

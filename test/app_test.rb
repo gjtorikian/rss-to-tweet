@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require File.expand_path '../test_helper.rb', __FILE__
 
-class AppTest < MiniTest::Unit::TestCase
+class AppTest < MiniTest::Test
 
   include Rack::Test::Methods
 

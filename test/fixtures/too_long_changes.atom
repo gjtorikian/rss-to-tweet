@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://developer.github.com/</id>
+  <title>GitHub API Changes</title>
+  <updated>2018-04-06T07:00:00Z</updated>
+  <link rel="alternate" href="https://developer.github.com/"/>
+  <link rel="self" href="https://developer.github.com/changes.atom"/>
+  <author>
+    <name>hubot</name>
+    <uri>https://github.com/hubot</uri>
+  </author>
+  <entry>
+    <id>tag:developer.github.com,2018-04-06:/changes/2018-04-06-self-serve-onboarding/</id>
+    <title type="html">Lorem ipsum dolor amet trust fund adaptogen fixie tacos, flannel man braid shabby chic godard sartorial twee you probably haven't heard of them edison bulb. Coloring book listicle disrupt fashion axe photo booth, tofu street art fingerstache artisan mixtape paleo.</title>
+    <published>2018-04-06T07:00:00Z</published>
+    <updated>2018-04-06T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-04-06-self-serve-onboarding/"/>
+    <content type="html">&lt;p&gt;After looking through our queue of amazing tools waiting to join the &lt;a href="https://www.github.com/marketplace"&gt;GitHub Marketplace&lt;/a&gt; we've decided to simplify the process--and to this end we're giving developers the ability to quickly get an app on the marketplace and onboard themselves.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a id="new-and-improved-guide" class="anchor" href="#new-and-improved-guide" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New and improved guide&lt;/h3&gt;
+
+&lt;p&gt;We now have a &lt;a href="/apps/marketplace/"&gt;micro-guide&lt;/a&gt; that explains everything you need to get setup on the GitHub Marketplace: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Providing Marketing &lt;a href="/apps/marketplace/creating-and-submitting-your-app-for-approval/"&gt;guidelines&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Finding API &lt;a href="/apps/marketplace/github-marketplace-api-endpoints/"&gt;endpoints&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Catching &lt;a href="/apps/marketplace/setting-up-github-marketplace-webhooks"&gt;webhooks&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Supporting &lt;a href="/apps/marketplace/administering-listing-plans-and-user-accounts/"&gt;billing and purchase flows &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Testing &lt;a href="/apps/marketplace/testing-apps-apis-and-webhooks/"&gt;methods&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+&lt;a id="what-if-youve-already-started" class="anchor" href="#what-if-youve-already-started" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;What if you've already started&lt;/h3&gt;
+
+&lt;p&gt;If you're already building a Marketplace app then you may have noticed the changes we've shipped this week. There is a completely new interface that enables you to move at your own pace and walks you through all the steps to go live on the Marketplace.&lt;/p&gt;
+
+&lt;p&gt;Feel free to continue building and make sure you have 4 green checkmarks in the left panel before you re-submit. We cannot wait to see what you've been building!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/4432363/38281050-9c004e1e-375d-11e8-8ab1-6ff567ca1157.png" alt="Screenshot"&gt;&lt;/p&gt;
+
+&lt;p&gt;For any other questions, feel free to contact us &lt;a href="https://github.com/contact?form%5Bsubject%5D=Marketplace+Self+Serve+Onboarding"&gt;here&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-03-28:/changes/2018-03-28-organization-project-permissions/</id>
+    <title type="html">Preview the Organization Project Permissions API</title>
+    <published>2018-03-28T07:00:00Z</published>
+    <updated>2018-03-28T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-03-28-organization-project-permissions/"/>
+    <content type="html">&lt;p&gt;We're releasing new API endpoints to support &lt;a href="https://blog.github.com/2018-03-28-improved-organization-project-permissions/"&gt;the new organization project permissions system&lt;/a&gt;. These new endpoints will give you the same granular control over organization projects that you're used to having with organization repositories.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="organization-project-collaborators" class="anchor" href="#organization-project-collaborators" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Organization project collaborators&lt;/h4&gt;
+
+&lt;p&gt;Using the new organization project collaborator API endpoints, you can &lt;a href="/v3//projects/collaborators#add-user-as-a-collaborator"&gt;add&lt;/a&gt;, &lt;a href="/v3/projects/collaborators#remove-user-as-a-collaborator"&gt;remove&lt;/a&gt;, &lt;a href="/v3/projects/collaborators#review-a-users-permission-level"&gt;review&lt;/a&gt;, and &lt;a href="/v3/projects/collaborators#list-collaborators"&gt;list&lt;/a&gt; organization project collaborators. You'll need admin access on a project to use these API endpoints, and they are only available to organization projects.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="organization-projects-on-teams" class="anchor" href="#organization-projects-on-teams" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Organization projects on teams&lt;/h4&gt;
+
+&lt;p&gt;Just like with repositories, you can &lt;a href="/v3/teams/#add-or-update-team-project"&gt;add&lt;/a&gt; organization projects to teams, &lt;a href="/v3/teams/#remove-team-project"&gt;remove&lt;/a&gt; organization projects from teams, &lt;a href="/v3/teams/#review-a-team-project"&gt;review&lt;/a&gt; a team's permission on an organization project, and &lt;a href="/v3/teams/#list-team-projects"&gt;list&lt;/a&gt; all the organization projects for a team. Adding and removing a team project requires admin access to that project, and these new endpoints are only available to organization projects.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="new-update-project-parameters" class="anchor" href="#new-update-project-parameters" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New "Update project" parameters&lt;/h4&gt;
+
+&lt;p&gt;The &lt;a href="/v3/projects/#update-a-project"&gt;Update project&lt;/a&gt; endpoint has two new parameters: &lt;code&gt;organization_permission&lt;/code&gt; and &lt;code&gt;private&lt;/code&gt;. You'll need admin access on a project to make changes to these parameters, and they only apply to organization projects.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="preview-period" class="anchor" href="#preview-period" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Preview period&lt;/h4&gt;
+
+&lt;p&gt;To access these new and updated endpoints during the preview period, you must provide a custom &lt;a href="/v3/media"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.inertia-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;During the preview period, we may change aspects of these API methods based on developer feedback. If we do, we will announce the changes here on the developer blog, but we will not provide any advance notice.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Organization+Project+Permissions"&gt;let us know&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-03-21:/changes/2018-03-21-hovercard-api-preview/</id>
+    <title type="html">Preview the new Hovercard API</title>
+    <published>2018-03-21T07:00:00Z</published>
+    <updated>2018-03-21T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-03-21-hovercard-api-preview/"/>
+    <content type="html">&lt;p&gt;We're releasing a Hovercard API that enables you to retrieve information contained in someone's hovercard using either GraphQL or REST. Use the &lt;code&gt;subject_type&lt;/code&gt; and &lt;code&gt;subject_id&lt;/code&gt; parameters to find out more about someone in relation to their pull requests, issues, repositories, and organizations.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="rest-api" class="anchor" href="#rest-api" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;REST API&lt;/h4&gt;
+
+&lt;p&gt;To access the new &lt;a href="/v3/users/#get-contextual-information-about-a-user"&gt;Get contextual information about a user&lt;/a&gt; endpoint during the preview period, you must provide a custom &lt;a href="/v3/media"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;   application/vnd.github.hagar-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;
+&lt;a id="graphql-api" class="anchor" href="#graphql-api" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;GraphQL API&lt;/h4&gt;
+
+&lt;p&gt;We're introducing a new connection on &lt;code&gt;User&lt;/code&gt; called &lt;code&gt;hovercard&lt;/code&gt; which enables you to retrieve data contained in someone's hovercard.&lt;/p&gt;
+
+&lt;p&gt;To access this new API during the preview period, you must provide an Accept header as well:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;   application/vnd.github.hagar-preview
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;During the preview period, we may change aspects of these APIs based on developer feedback.
+If we do, we will announce the changes here on the developer blog, but we will not provide any advance notice.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Hovercards+API"&gt;let us know&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-03-20:/changes/2018-03-20-introducing-new-ways-to-build-on-your-workflow/</id>
+    <title type="html">Introducing new ways to build on your workflow</title>
+    <published>2018-03-20T07:00:00Z</published>
+    <updated>2018-03-20T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-03-20-introducing-new-ways-to-build-on-your-workflow/"/>
+    <content type="html">&lt;p&gt;Whether you’re a team of 2 or 20,000, there's an app to simplify your work on GitHub Marketplace. Last week, we launched 2 new apps in the Marketplace that will make it easier to automate dependency updates and review code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Code review&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/marketplace/codefactor"&gt;CodeFactor&lt;/a&gt; is a simple to use, automated Code Review service built by developers for developers. Setup with GitHub in seconds, to save time on code reviews and easily create issues directly from CodeFactor. Streamline your code review process and create actionable reports.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dependency Management&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/marketplace/renovate"&gt;Renovate&lt;/a&gt; brings automatic Javascript dependency updates to your workflow and supports npm, Yarn, Meteor, Docker or Bazel. It comes ready to go with a smart default configuration but provides a flexible configuration framework including scheduling and rules-based auto-merging to guide the updates you want to see in your repositories.&lt;/p&gt;
+
+&lt;p&gt;Ready to try out these new additions? See how they can help your team work better or discover even more tools in &lt;a href="https://github.com/marketplace"&gt;GitHub Marketplace&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-03-16:/changes/2018-03-16-protected-branches-required-approving-reviews/</id>
+    <title type="html">Require Multiple Approving Reviews for Protected Branches</title>
+    <published>2018-03-16T07:00:00Z</published>
+    <updated>2018-03-16T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-03-16-protected-branches-required-approving-reviews/"/>
+    <content type="html">&lt;p&gt;The Protected Branches API now has a setting for requiring up to 6 approving pull request reviews. You can manage and view this setting from four endpoints:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#get-branch-protection"&gt;Get branch protection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#update-branch-protection"&gt;Update branch protection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#get-pull-request-review-enforcement-of-protected-branch"&gt;Get pull request review enforcement of protected branch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#update-pull-request-review-enforcement-of-protected-branch"&gt;Update pull request review enforcement of protected branch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="how-can-i-try-it" class="anchor" href="#how-can-i-try-it" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;How can I try it?&lt;/h4&gt;
+
+&lt;p&gt;To access this functionality during the preview period, you’ll need to provide the following custom media type in the Accept header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.luke-cage-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Take a look at &lt;a href="/v3/repos/branches/"&gt;the docs here&lt;/a&gt;. If you have any questions, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Require+Multiple+Approving+Reviews+API+Preview"&gt;get in touch&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-03-16:/changes/2018-03-16-team-discussion-reactions-api-and-apps-endpoints/</id>
+    <title type="html">GitHub Apps and Reactions for Team Discussions</title>
+    <published>2018-03-16T07:00:00Z</published>
+    <updated>2018-03-16T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-03-16-team-discussion-reactions-api-and-apps-endpoints/"/>
+    <content type="html">&lt;p&gt;Today we added new endpoints to the &lt;a href="/changes/2016-05-12-reactions-api-preview"&gt;Reactions API preview&lt;/a&gt; that allow you to interact with reactions to &lt;a href="https://github.com/blog/2471-introducing-team-discussions"&gt;team discussions&lt;/a&gt; and their comments. You can access these endpoints during the preview period by providing custom &lt;a href="/v3/media"&gt;media types&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.squirrel-girl-preview+json, application/vnd.github.echo-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Over the course of the preview period we may change aspects of the API based on developer feedback. If we do, we will not provide any advance notice of the changes, but we will announce them here on the developer blog.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a id="new-rest-api-endpoints" class="anchor" href="#new-rest-api-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New REST API endpoints&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#list-reactions-for-a-team-discussion"&gt;List reactions to a discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#create-reaction-for-a-team-discussion"&gt;Create a reaction to a discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#list-reactions-for-a-team-discussion-comment"&gt;List reactions to a comment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#create-reaction-for-a-team-discussion-comment"&gt;Create a reaction to a comment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We've also enabled &lt;a href="/changes/2017-05-22-github-apps-production-ship"&gt;GitHub Apps&lt;/a&gt; for all endpoints related to team discussions. The endpoints listed below are available for both server-to-server and &lt;a href="/apps/building-integrations/setting-up-and-registering-github-apps/identifying-users-for-github-apps"&gt;user-to-server&lt;/a&gt; requests.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a id="recently-enabled-rest-api-endpoints-for-github-apps" class="anchor" href="#recently-enabled-rest-api-endpoints-for-github-apps" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Recently enabled REST API endpoints for GitHub Apps&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#list-discussions"&gt;List discussions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#get-a-single-discussion"&gt;Get a single discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#create-a-discussion"&gt;Create a discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#edit-a-discussion"&gt;Edit a discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#delete-a-discussion"&gt;Delete a discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#list-comments"&gt;List comments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#get-a-single-comment"&gt;Get a single comment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#create-a-comment"&gt;Create a comment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#edit-a-comment"&gt;Edit a comment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#delete-a-comment"&gt;Delete a comment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#list-discussions"&gt;List reactions to a discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#create-a-discussion"&gt;Create a reaction to a team discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#list-discussions"&gt;List reactions to a team discussion comment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#create-a-discussion"&gt;Create a reaction to a team discussion comment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We hope these changes help you build better integrations! If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=GitHub+Apps+and+Reactions+for+Team+Discussions"&gt;let us know&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-03-13:/changes/2018-03-13-team-discussions-graphql-api-preview/</id>
+    <title type="html">Preview the new Team Discussions GraphQL API</title>
+    <published>2018-03-13T07:00:00Z</published>
+    <updated>2018-03-13T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-03-13-team-discussions-graphql-api-preview/"/>
+    <content type="html">&lt;p&gt;We added new objects and mutations to our GraphQL API that allow you to read and manage &lt;a href="https://github.com/blog/2471-introducing-team-discussions"&gt;team discussions&lt;/a&gt;. Team discussions is the first GraphQL feature to use a preview period. GraphQL previews work the same way as they do with our REST API. As always, if you want to find out about upcoming GraphQL schema changes, follow the &lt;a href="/v4/changelog/"&gt;GraphQL Changelog&lt;/a&gt; which now includes preview periods as well.&lt;/p&gt;
+
+&lt;p&gt;You can access the new objects and mutations during the &lt;a href="/v4/previews/"&gt;preview period&lt;/a&gt; by providing a custom &lt;a href="/v4/previews/#team-discussions"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.echo-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;
+&lt;a id="new-graphql-objects" class="anchor" href="#new-graphql-objects" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New GraphQL objects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v4/object/teamdiscussion/"&gt;&lt;code&gt;TeamDiscussion&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v4/object/teamdiscussioncomment/"&gt;&lt;code&gt;TeamDiscussionComment&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+&lt;a id="new-graphql-fields" class="anchor" href="#new-graphql-fields" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New GraphQL fields&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v4/object/team/#fields"&gt;&lt;code&gt;Team.discussion&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v4/object/team/#fields"&gt;&lt;code&gt;Team.discussions&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v4/object/team/#fields"&gt;&lt;code&gt;Team.discussionsResourcePath&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v4/object/team/#fields"&gt;&lt;code&gt;Team.discussionsUrl&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+&lt;a id="new-graphql-mutations" class="anchor" href="#new-graphql-mutations" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New GraphQL mutations&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v4/mutation/createteamdiscussion/"&gt;&lt;code&gt;createTeamDiscussion&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v4/mutation/createteamdiscussioncomment/"&gt;&lt;code&gt;createTeamDiscussionComment&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v4/mutation/deleteteamdiscussion/"&gt;&lt;code&gt;deleteTeamDiscussion&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v4/mutation/deleteteamdiscussioncomment/"&gt;&lt;code&gt;deleteTeamDiscussionComment&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v4/mutation/updateteamdiscussion/"&gt;&lt;code&gt;updateTeamDiscussion&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v4/mutation/updateteamdiscussioncomment/"&gt;&lt;code&gt;updateTeamDiscussionComment&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;During the preview period, we may change aspects of the API based on developer feedback. If we do, we will not provide any advance notice of the changes, but we will announce them here on the developer blog.&lt;/p&gt;
+
+&lt;p&gt;We are really excited to see what integrations you develop around this API! If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Team+Discussions+GraphQL"&gt;let us know&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-02-22:/changes/2018-02-22-protected-branches-required-signatures/</id>
+    <title type="html">Preview required commit signatures for Protected Branches API</title>
+    <published>2018-02-22T08:00:00Z</published>
+    <updated>2018-02-22T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-02-22-protected-branches-required-signatures/"/>
+    <content type="html">&lt;p&gt;Protected Branches API now has a setting for requiring signed commits. We're adding three new endpoints for managing this setting. You can learn more about commit signing &lt;a href="https://help.github.com/articles/signing-commits-with-gpg/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="new-endpoints" class="anchor" href="#new-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New endpoints&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#get-required-signatures-of-protected-branch"&gt;Get required signatures of protected branches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#add-required-signatures-of-protected-branch"&gt;Add required signatures of protected branches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-required-signatures-of-protected-branch"&gt;Remove required signatures of protected branches&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="how-can-i-try-it" class="anchor" href="#how-can-i-try-it" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;How can I try it?&lt;/h4&gt;
+
+&lt;p&gt;To access this functionality during the preview period, you’ll need to provide the following custom media type in the Accept header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.zzzax-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Take a look at &lt;a href="/v3/repos/branches/"&gt;the docs here&lt;/a&gt;. If you have any questions, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Required+Signatures+API+Preview"&gt;get in touch&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-02-22:/changes/2018-02-22-label-description-search-preview/</id>
+    <title type="html">Label API improvements&amp;#58; emoji, descriptions, and search</title>
+    <published>2018-02-22T08:00:00Z</published>
+    <updated>2018-02-22T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-02-22-label-description-search-preview/"/>
+    <content type="html">&lt;p&gt;We're happy to announce a new preview period for the &lt;a href="/v3/issues/labels/"&gt;Labels API&lt;/a&gt;. You can now use emoji in label names, add label descriptions, and search labels in a repository.&lt;/p&gt;
+
+&lt;p&gt;To access these features during the preview period, you must provide a custom &lt;a href="/v3/media/"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.symmetra-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;During the preview period, we may change aspects of these API methods based on your feedback. If we do, we'll announce the changes here on the developer blog, but we won't provide advance notice.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Label+Search+and+Descriptions+API"&gt;contact us&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a id="new-endpoints" class="anchor" href="#new-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New endpoints&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/search/#search-labels"&gt;Search labels&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+&lt;a id="updated-endpoints" class="anchor" href="#updated-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Updated endpoints&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/issues/labels/#create-a-label"&gt;Create a label&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/labels/#update-a-label"&gt;Update a label&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-02-07:/changes/2018-02-07-team-discussions-api/</id>
+    <title type="html">Preview the new Team Discussions REST API</title>
+    <published>2018-02-07T08:00:00Z</published>
+    <updated>2018-02-07T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-02-07-team-discussions-api/"/>
+    <content type="html">&lt;p&gt;Today, we released the REST API that allows you to read and manage &lt;a href="https://github.com/blog/2471-introducing-team-discussions"&gt;team discussions&lt;/a&gt; programmatically, and we'll be announcing GraphQL support soon. You can access the REST API during the preview period by providing a custom &lt;a href="/v3/media"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.echo-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;During the preview period, we may change aspects of the API based on developer feedback. If we do, we will not provide any advance notice of the changes, but we will announce them here on the developer blog.&lt;/p&gt;
+
+&lt;p&gt;We are really excited to see what integrations you develop around this API! If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Team+Discussions"&gt;let us know&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a id="new-rest-api-endpoints" class="anchor" href="#new-rest-api-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New REST API endpoints&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#list-discussions"&gt;List discussions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#get-a-single-discussion"&gt;Get a single discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#create-a-discussion"&gt;Create a discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#edit-a-discussion"&gt;Edit a discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussions/#delete-a-discussion"&gt;Delete a discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#list-comments"&gt;List comments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#get-a-single-comment"&gt;Get a single comment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#create-a-comment"&gt;Create a comment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#edit-a-comment"&gt;Edit a comment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/discussion_comments/#delete-a-comment"&gt;Delete a comment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+&lt;a id="updates-to-the-teams-api-documentation" class="anchor" href="#updates-to-the-teams-api-documentation" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Updates to the Teams API documentation&lt;/h2&gt;
+
+&lt;p&gt;We've also updated the location of our Teams REST API documentation. You'll now find the &lt;a href="/v3/teams"&gt;Teams API&lt;/a&gt; at the top level in the v3 documentation sidebar (no longer nested under Organizations). The &lt;a href="/v3/teams/members"&gt;team members&lt;/a&gt;, &lt;a href="/v3/teams/discussions"&gt;team discussions&lt;/a&gt;, and &lt;a href="/v3/teams/discussion_comments"&gt;team discussion comments&lt;/a&gt; APIs are in the Teams section.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-02-01:/changes/2018-02-01-weak-crypto-removal-notice/</id>
+    <title type="html">Weak cryptographic standards removal notice</title>
+    <published>2018-02-01T08:00:00Z</published>
+    <updated>2018-02-01T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-02-01-weak-crypto-removal-notice/"/>
+    <content type="html">&lt;p&gt;&lt;a href="https://githubengineering.com/crypto-deprecation-notice"&gt;Last year&lt;/a&gt; we announced the deprecation of several weak cryptographic standards. Then we provided &lt;a href="https://githubengineering.com/crypto-deprecation-notice-update-1/"&gt;a status update&lt;/a&gt; toward the end of last year outlining some changes we'd made to make the transition easier for clients. We quickly approached the February 1, 2018 cutoff date we mentioned in previous posts and, as a result, pushed back our schedule by one week. On &lt;strong&gt;February 8, 2018&lt;/strong&gt; we'll start disabling the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;code&gt;TLSv1&lt;/code&gt;/&lt;code&gt;TLSv1.1&lt;/code&gt;: This applies to all HTTPS connections, including web, API, and git connections to &lt;a href="https://github.com"&gt;https://github.com&lt;/a&gt; and &lt;a href="https://api.github.com"&gt;https://api.github.com&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;diffie-hellman-group1-sha1&lt;/code&gt;: This applies to all SSH connections to github.com&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;diffie-hellman-group14-sha1&lt;/code&gt;: This applies to all SSH connections to github.com&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We'll disable the algorithms in two stages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;February 8, 2018 19:00 UTC (11:00 am PST)&lt;/strong&gt;: Disable deprecated algorithms for &lt;em&gt;one hour&lt;/em&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;February 22, 2018 19:00 UTC (11:00 am PST)&lt;/strong&gt;: Permanently disable deprecated algorithms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more details, head to the &lt;a href="https://githubengineering.com/crypto-removal-notice/"&gt;Engineering Blog&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-01-25:/changes/2018-01-25-organization-invitation-api-preview/</id>
+    <title type="html">Preview the new Organization Invitation API</title>
+    <published>2018-01-25T08:00:00Z</published>
+    <updated>2018-01-25T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-01-25-organization-invitation-api-preview/"/>
+    <content type="html">&lt;p&gt;We're releasing two new endpoints that allow you to programmatically invite new members to an organization using their email or user ID.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="new-endpoints" class="anchor" href="#new-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New endpoints&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/orgs/members#create-organization-invitation"&gt;Create organization invitation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/orgs/members#list-organization-invitation-teams"&gt;List organization invitation teams&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="changes-to-existing-endpoints" class="anchor" href="#changes-to-existing-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Changes to existing endpoints&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We've added two new fields to the existing &lt;a href="/v3/orgs/members#list-pending-organization-invitations"&gt;List pending organization invitations&lt;/a&gt; API: &lt;code&gt;team_count&lt;/code&gt; and &lt;code&gt;invitation_teams_url&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To access these new API endpoints during the preview period, you must provide a custom &lt;a href="/v3/media"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.dazzler-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;During the preview period, we may change aspects of this API endpoint based on developer feedback.
+If we do, we will announce the changes here on the developer blog, but we will not provide any advance notice.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Organization+Invitations"&gt;let us know&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-01-24:/changes/2018-01-24-end-thor-preview/</id>
+    <title type="html">Team Review Requests API becomes an official part of API v3</title>
+    <published>2018-01-24T08:00:00Z</published>
+    <updated>2018-01-24T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-01-24-end-thor-preview/"/>
+    <content type="html">&lt;p&gt;The &lt;a href="/v3/pulls/review_requests/"&gt;Team Review Requests API&lt;/a&gt; just graduated from preview mode. It's now an official part of the GitHub REST API v3.
+As outlined in &lt;a href="/changes/2017-07-26-team-review-request-thor-preview/#breaking-changes"&gt;this blog post&lt;/a&gt; we will be making a breaking change to the API. Going forward, when you &lt;code&gt;GET&lt;/code&gt; &lt;code&gt;/repos/:owner/:repo/pulls/:number/requested_reviewers&lt;/code&gt; it will return &lt;a href="/v3/pulls/review_requests/#list-review-requests"&gt;both users and teams&lt;/a&gt; in a hash syntax, instead of only users. Please take the time to update your API's accordingly.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a id="preview-media-type-no-longer-needed" class="anchor" href="#preview-media-type-no-longer-needed" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Preview media type no longer needed&lt;/h3&gt;
+
+&lt;p&gt;If you used the Team Review Requests API during the preview period, you needed to provide a custom media type in the Accept header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.thor-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now that the preview period has ended, you no longer need to pass this custom media type.
+Instead, we recommend that you specify v3 as the version in the Accept header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.v3+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please note, that GitHub Enterprise versions that do not yet support the Team Review Requests API will still require the custom media type.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Onward!&lt;/em&gt;&lt;/strong&gt;
+Thanks again to everyone that tried out the Team Review Requests API during the preview period.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-01-17:/changes/2018-01-17-issue-event-breaking-change/</id>
+    <title type="html">Issue Events API - Dismissed Review Event State</title>
+    <published>2018-01-17T08:00:00Z</published>
+    <updated>2018-01-17T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-01-17-issue-event-breaking-change/"/>
+    <content type="html">&lt;p&gt;As &lt;a href="/changes/2018-01-05-dismiss-event-breaking-change/"&gt;previously announced&lt;/a&gt;, today we introduced a breaking change to the &lt;code&gt;dismissed_review&lt;/code&gt; object in the &lt;a href="/v3/issues/events/"&gt;Issue Events API&lt;/a&gt; and &lt;a href="/v3/issues/timeline/"&gt;Issue Timeline API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Going forward, the &lt;code&gt;state&lt;/code&gt; will be a more informative string instead of an integer. Possible strings include &lt;code&gt;commented&lt;/code&gt;, &lt;code&gt;approved&lt;/code&gt;, or &lt;code&gt;changes_requested&lt;/code&gt;. The API will no longer include the &lt;code&gt;dismissal_commit_id&lt;/code&gt; field if a commit was not involved in the dismissal.&lt;/p&gt;
+
+&lt;p&gt;Please update your code accordingly, and &lt;a href="https://github.com/contact?form%5Bsubject%5D=API+Breaking+Change+Dismissed+Issue+Event"&gt;let us know&lt;/a&gt; if you have any questions.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-01-10:/changes/2018-01-10-lock-reason-api-preview/</id>
+    <title type="html">Preview adding a Lock Reason via the Lock Issue API</title>
+    <published>2018-01-10T08:00:00Z</published>
+    <updated>2018-01-10T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-01-10-lock-reason-api-preview/"/>
+    <content type="html">&lt;p&gt;When locking an issue via the issues API, you can now provide an optional reason that will be visible to anyone who views the issue. Valid lock reasons are "off-topic", "too heated", "resolved", and "spam". Providing a lock reason can help make it clearer to contributors why an issue was locked, and what kinds of behavior may result in issues being locked in the future. This change will be available on both the REST API as well as the GraphQL API.&lt;/p&gt;
+
+&lt;p&gt;To set a &lt;code&gt;lock_reason&lt;/code&gt; during the preview period, you must provide a custom &lt;a href="/v3/media"&gt;media type&lt;/a&gt; in the Accept header:
+&lt;code&gt;application/vnd.github.sailor-v-preview+json&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;During the preview period, we may change aspects of these API methods based on developer feedback. If we do, we will announce the changes here on the developer blog, but we will not provide any advance notice.&lt;/p&gt;
+
+&lt;p&gt;To our GitHub Enterprise customers: issue lock reasons will be available in the next Enterprise release (2.13), but not in the current version or older versions.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="rest-api-changes" class="anchor" href="#rest-api-changes" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;REST API changes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="/v3/issues/#issues"&gt;Issue&lt;/a&gt; and &lt;a href="/v3/pulls/#pull-requests"&gt;pull request&lt;/a&gt; responses now contain an &lt;code&gt;active_lock_reason&lt;/code&gt; field that shows the &lt;code&gt;lock_reason&lt;/code&gt; that was selected for an issue or pull request, if it is currently locked and a reason was provided.&lt;/li&gt;
+&lt;li&gt;You can use the REST API to pass an optional &lt;code&gt;lock_reason&lt;/code&gt; parameter to the &lt;a href="/v3/issues/#lock-an-issue"&gt;Lock issue&lt;/a&gt; at &lt;code&gt;PUT /repos/:owner/:repo/issues/:number/lock&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="/v3/issues/events"&gt;Issue and pull request event&lt;/a&gt; responses now contain a &lt;code&gt;lock_reason&lt;/code&gt; field that shows the &lt;code&gt;lock_reason&lt;/code&gt; that was selected for a &lt;code&gt;locked&lt;/code&gt; event.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="graphql-api-changes" class="anchor" href="#graphql-api-changes" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;GraphQL API changes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="/v4/interface/lockable"&gt;&lt;code&gt;Lockable&lt;/code&gt; objects&lt;/a&gt; now contain an &lt;code&gt;activeLockReason&lt;/code&gt; field that shows the &lt;code&gt;lock_reason&lt;/code&gt; that was selected for an issue or pull request, if it is currently locked and a reason was provided.&lt;/li&gt;
+&lt;li&gt;You can now lock issues and pull requests through the GraphQL API through the &lt;a href="/v4/mutation/locklockable"&gt;&lt;code&gt;lockLockable&lt;/code&gt; mutation&lt;/a&gt;, which includes an optional &lt;code&gt;lockReason&lt;/code&gt; parameter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Issue+Lock+Reason+API+Preview"&gt;let us know&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2018-01-05:/changes/2018-01-05-dismiss-event-breaking-change/</id>
+    <title type="html">Issue Events API - Dismissed Review Event State</title>
+    <published>2018-01-05T08:00:00Z</published>
+    <updated>2018-01-05T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2018-01-05-dismiss-event-breaking-change/"/>
+    <content type="html">&lt;p&gt;On January 17, 2018, we will introduce a breaking change to the &lt;code&gt;dismissed_review&lt;/code&gt; event in the &lt;a href="/v3/issues/events/"&gt;Issue Events API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Currently, the REST API v3 passes an integer for &lt;code&gt;state&lt;/code&gt;, but with this change it will pass a more informative string. Possible strings include &lt;code&gt;commented&lt;/code&gt;, &lt;code&gt;approved&lt;/code&gt;, or &lt;code&gt;changes_requested&lt;/code&gt;. Along with this breaking change, the API will no longer include the &lt;code&gt;dismissal_commit_id&lt;/code&gt; field if a commit was not involved in the dismissal.&lt;/p&gt;
+
+&lt;p&gt;Please update your code accordingly, and &lt;a href="https://github.com/contact?form%5Bsubject%5D=API+Breaking+Change+Dismissed+Issue+Event"&gt;let us know&lt;/a&gt; if you have any questions or feedback!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-12-19:/changes/2017-12-19-graphql-node-id/</id>
+    <title type="html">Preview GraphQL API v4 Node IDs in REST API v3 resources</title>
+    <published>2017-12-19T08:00:00Z</published>
+    <updated>2017-12-19T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-12-19-graphql-node-id/"/>
+    <content type="html">&lt;p&gt;To help with migrating from our &lt;a href="/v3/"&gt;REST API v3&lt;/a&gt; to &lt;a href="/v4/"&gt;GraphQL API v4&lt;/a&gt;, we're introducing a new preview period to include the &lt;a href="/v4/reference/interface/node/#fields" data-proofer-ignore&gt;GraphQL node ID&lt;/a&gt; in the response for the following REST API v3 resources:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/repos/deployments/"&gt;Deployments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/gists/"&gt;Gists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/blobs/"&gt;Git Blobs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/commits/"&gt;Git Commits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/refs/"&gt;Git References&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/tags/"&gt;Git Tags&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/"&gt;Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/labels/"&gt;Labels&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/milestones/"&gt;Milestones&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/orgs/"&gt;Organizations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/projects/"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/pulls/"&gt;Pull Requests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/"&gt;Reactions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/releases/"&gt;Releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/"&gt;Repositories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/statuses/"&gt;Statuses&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/teams/"&gt;Teams&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/users/"&gt;Users&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To access the API during the preview period, you must provide a custom media type in the Accept header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.jean-grey-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example response from Users which includes &lt;code&gt;node_id&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre class="highlight highlight-json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"id"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;79995&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"dewski"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"node_id"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"MDQ6VXNlcjc5OTk1"&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Fetching the same user using the &lt;a href="/v4/reference/interface/node/" data-proofer-ignore&gt;node interface&lt;/a&gt; in our GraphQL API v4:&lt;/p&gt;
+
+&lt;pre class="highlight highlight-graphql"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"MDQ6VXNlcjc5OTk1"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="n"&gt;databaseId&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="n"&gt;login&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Which would return:&lt;/p&gt;
+
+&lt;pre class="highlight highlight-json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"data"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="nt"&gt;"node"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="nt"&gt;"databaseId"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;79995&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="nt"&gt;"login"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"dewski"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="nt"&gt;"id"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"MDQ6VXNlcjc5OTk1"&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;For more information, see "&lt;a href="/v3#graphql-global-relay-ids"&gt;GraphQL Global Relay IDs&lt;/a&gt;."&lt;/p&gt;
+
+&lt;p&gt;Please note that &lt;code&gt;node_id&lt;/code&gt; is only available to GitHub Enterprise customers on &lt;a href="/enterprise/2.12/" data-proofer-ignore&gt;2.12&lt;/a&gt; (and future GHE versions when they are released).&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, please let us know on the &lt;a href="https://platform.github.community/c/graphql-api"&gt;GitHub Platform Forum&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-12-13:/changes/2017-12-13-introducing-new-ways-to-build-with-github-enterprise-2.12/</id>
+    <title type="html">Introducing new ways to build with GitHub Enterprise 2.12</title>
+    <published>2017-12-13T08:00:00Z</published>
+    <updated>2017-12-13T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-12-13-introducing-new-ways-to-build-with-github-enterprise-2.12/"/>
+    <content type="html">&lt;p&gt;Yesterday, we released GitHub Enterprise 2.12. This release includes a few updates relevant to the platform community including GitHub Apps, global webhooks, GitHub Enterprise version information in API responses, and new and improved documentation.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="github-apps-compatibility" class="anchor" href="#github-apps-compatibility" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;GitHub Apps compatibility&lt;/h4&gt;
+
+&lt;p&gt;GitHub Apps is now enabled in early access for GitHub Enterprise 2.12. This means GitHub Apps can be created and installed on the GitHub Enterprise instance. We’re still customizing the GitHub Apps experience for the unique needs of an on-premise environment—hence the “early access”—and we’d appreciate &lt;a href="https://platform.github.community/t/installing-integrations-on-github-enterprise/557"&gt;your feedback&lt;/a&gt; along the way.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="global-webhooks" class="anchor" href="#global-webhooks" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Global webhooks&lt;/h4&gt;
+
+&lt;p&gt;In addition to Organization and Repository-specific webhooks, teams can now configure webhooks that are global to the entire instance of GitHub Enterprise. Global webhooks give administrators the ability to configure notifications for account creation and deletion, as well as membership changes. These events are also available to integrators, adding depth to any administrative features your integration offers. Check out &lt;a href="https://help.github.com/enterprise/2.12/admin/guides/user-management/about-global-webhooks/"&gt;help&lt;/a&gt; or the &lt;a href="/enterprise/2.12/v3/enterprise-admin/global_webhooks/" data-proofer-ignore&gt;API&lt;/a&gt; documentation for more details.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="adding-github-enterprise-version-info-to-api-responses" class="anchor" href="#adding-github-enterprise-version-info-to-api-responses" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Adding GitHub Enterprise version info to API responses&lt;/h4&gt;
+
+&lt;p&gt;GitHub Enterprise 2.12 also returns the GitHub Enterprise version via the &lt;a href="/enterprise/2.12/v3/meta/" data-proofer-ignore&gt;Meta&lt;/a&gt; API and response headers for all REST API endpoints.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="check-out-updated-documentation" class="anchor" href="#check-out-updated-documentation" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Check out updated documentation&lt;/h4&gt;
+
+&lt;p&gt;As part of the GitHub Apps release, you'll find refreshed documentation:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A new guide for &lt;a href="/enterprise/2.12/apps/getting-started-with-building-apps/" data-proofer-ignore&gt;getting started with building apps&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;An updated guide that outlines &lt;a href="/enterprise/2.12/apps/differences-between-apps/" data-proofer-ignore&gt;the differences between GitHub Apps and OAuth Apps&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A streamlined top navigation that makes Enterprise documentation accessible from any page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We can’t wait to see what you’ll build with these new features. Learn more on the &lt;a href="https://github.com/blog/2478-introducing-github-enterprise-2-12"&gt;release blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions about GitHub Apps, or want to collaborate with other integrators, check out the &lt;a href="https://platform.github.community/c/integrations"&gt;Platform Forum&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-11-29:/changes/2017-11-29-deprecation-of-performed-via-integration-key/</id>
+    <title type="html">Deprecation of performed_via_integration key</title>
+    <published>2017-11-29T08:00:00Z</published>
+    <updated>2017-11-29T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-11-29-deprecation-of-performed-via-integration-key/"/>
+    <content type="html">&lt;p&gt;As part of the name change from Integrations to GitHub Apps, we have deprecated the &lt;code&gt;performed_via_integration&lt;/code&gt; key in favor of &lt;code&gt;performed_via_github_app&lt;/code&gt;. The old key will no longer be returned starting &lt;strong&gt;on December 13&lt;/strong&gt;. Please update your application to respond to the new key as soon as possible.&lt;/p&gt;
+
+&lt;p&gt;For related deprecations, please see our previous &lt;a href="/changes/2017-10-26-deprecation-reminder-for-certain-github-apps-events-keys-and-routing/"&gt;blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="questions" class="anchor" href="#questions" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Questions?&lt;/h4&gt;
+
+&lt;p&gt;If you have questions about this upcoming deprecation, feel free to reach out on the &lt;a href="https://platform.github.community/c/integrations"&gt;Platform forum&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-11-28:/changes/2017-11-28-ending-the-license-api-preview/</id>
+    <title type="html">Ending the License API preview</title>
+    <published>2017-11-28T08:00:00Z</published>
+    <updated>2017-11-28T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-11-28-ending-the-license-api-preview/"/>
+    <content type="html">&lt;p&gt;In March of 2015, we &lt;a href="/changes/2015-03-09-licenses-api/"&gt;announced the License API preview&lt;/a&gt; to support &lt;a href="https://github.com/blog/1964-license-usage-on-github-com"&gt;open source license usage on GitHub.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since then, we've improved &lt;a href="https://github.com/benbalter/licensee"&gt;the underlying license detection algorithm&lt;/a&gt;, &lt;a href="/changes/2015-06-24-licenses-api-update/"&gt;added license support to additional endpoints&lt;/a&gt;, and made it easier to &lt;a href="/changes/2015-08-04-get-license-contents/"&gt;retrieve a repository's license text&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Today, we're making things official by ending the preview period, and we consider the response payload to be stable going forward. We've also exposed license metadata via the &lt;a href="/v4/"&gt;GraphQL API&lt;/a&gt; as a repository's &lt;code&gt;licenseInfo&lt;/code&gt; property.&lt;/p&gt;
+
+&lt;p&gt;Going forward, endpoints that return license metadata will no longer require passing the preview media type. Instead, we recommend that you specify &lt;code&gt;v3&lt;/code&gt; as the version in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.v3+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please note, however, GitHub Enterprise versions that do not yet support the License API will still require the custom media type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.drax-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For more information, see &lt;a href="/v3/licenses/"&gt;the License API documentation&lt;/a&gt; or &lt;a href="https://github.com/contact?form%5Bsubject%5D=License+API"&gt;drop us a line&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-11-09:/changes/2017-11-09-repository-transfer-api-preview/</id>
+    <title type="html">Preview the new Repository Transfer API</title>
+    <published>2017-11-09T08:00:00Z</published>
+    <updated>2017-11-09T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-11-09-repository-transfer-api-preview/"/>
+    <content type="html">&lt;p&gt;We're releasing a new endpoint that allows you to transfer a repository to another user or organization.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="new-endpoint" class="anchor" href="#new-endpoint" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;New endpoint&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/repos#transfer-a-repository"&gt;Transfer a repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To access this new API endpoint during the preview period, you must provide a custom &lt;a href="/v3/media"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.nightshade-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;During the preview period, we may change aspects of this API endpoint based on developer feedback.
+If we do, we will announce the changes here on the developer blog, but we will not provide any advance notice.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Transfer+Repositories"&gt;let us know&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-11-08:/changes/2017-11-08-archiving-repositories/</id>
+    <title type="html">Archiving repositories</title>
+    <published>2017-11-08T08:00:00Z</published>
+    <updated>2017-11-08T08:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-11-08-archiving-repositories/"/>
+    <content type="html">&lt;p&gt;As part of the release of &lt;a href="https://github.com/blog/2460-archiving-repositories"&gt;archiving repositories&lt;/a&gt;, we've made changes to expose this feature to developers.&lt;/p&gt;
+
+&lt;p&gt;Note that archived repositories are read-only to everyone (including repository owners). This includes anyone using the REST or GraphQL APIs to edit the repository, issues, pull requests, labels, milestones, projects, wiki, releases, commits, tags, branches, reactions, or comments. No one (including repository owners) can use the REST or GraphQL APIs to create new issues, pull requests, or comments on an archived repository.&lt;/p&gt;
+
+&lt;p&gt;To our GitHub Enterprise customers: archiving repositories will be available in the next Enterprise release (2.12), but not in the current version or older versions.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="rest-api-changes" class="anchor" href="#rest-api-changes" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;REST API changes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Repository responses now contain an &lt;code&gt;archived&lt;/code&gt; field that is &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; depending on whether the repository was archived.&lt;/li&gt;
+&lt;li&gt;You can use the REST API to archive repositories by passing the &lt;code&gt;"archived": true&lt;/code&gt; parameter to the &lt;a href="/v3/repos/#edit"&gt;Edit endpoint&lt;/a&gt; at &lt;code&gt;PATCH /repos/:owner/:repo&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="graphql-api-changes" class="anchor" href="#graphql-api-changes" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;GraphQL API changes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;code&gt;Repository&lt;/code&gt;, &lt;code&gt;RepositoryInfo&lt;/code&gt;, and &lt;code&gt;RepositoryInvitationRepository&lt;/code&gt; objects now contain an &lt;code&gt;isArchived&lt;/code&gt; field that is &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; depending on whether the repository was archived.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="webhook-changes" class="anchor" href="#webhook-changes" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Webhook changes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="/v3/activity/events/types/#repositoryevent"&gt;&lt;code&gt;RepositoryEvent&lt;/code&gt;&lt;/a&gt; webhooks are now emitted when a repository is &lt;code&gt;archived&lt;/code&gt; or &lt;code&gt;unarchived&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="search-changes" class="anchor" href="#search-changes" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Search changes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You can search for archived &lt;a href="/v3/search/#search-repositories"&gt;repositories&lt;/a&gt; and their &lt;a href="/v3/search/#search-issues"&gt;issues and pull requests&lt;/a&gt; using the &lt;code&gt;archived:true&lt;/code&gt; search filter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy archiving! If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Archiving+Repositories"&gt;let us know&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-10-26:/changes/2017-10-26-deprecation-reminder-for-certain-github-apps-events-keys-and-routing/</id>
+    <title type="html">Deprecation reminder for certain GitHub Apps events, keys, and routing</title>
+    <published>2017-10-26T07:00:00Z</published>
+    <updated>2017-10-26T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-10-26-deprecation-reminder-for-certain-github-apps-events-keys-and-routing/"/>
+    <content type="html">&lt;p&gt;As part of the name change from Integrations to GitHub Apps, we previously announced breaking changes to certain webhook events, payloads, responses, and URL routing. We continued to support the original implementation with a &lt;strong&gt;deprecation date of November 22, 2017&lt;/strong&gt;. As this date nears, we want to remind you to update your applications as soon as possible.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="api-and-webhook-changes" class="anchor" href="#api-and-webhook-changes" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;API and webhook changes&lt;/h4&gt;
+
+&lt;p&gt;As announced &lt;a href="/changes/2017-05-22-github-apps-production-ship/#breaking-changes"&gt;in May&lt;/a&gt;, the following breaking changes will be made to the API and webhooks on November 22:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;integration_installation&lt;/code&gt; and &lt;code&gt;integration_installation_repositories&lt;/code&gt; event names will be removed in favor of &lt;code&gt;installation&lt;/code&gt; and &lt;code&gt;installation_repositories&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;integration_id&lt;/code&gt; key in webhook payloads and API responses will be removed in favor of the &lt;code&gt;app_id&lt;/code&gt; key.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="changes-to-url-routing" class="anchor" href="#changes-to-url-routing" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Changes to URL routing&lt;/h4&gt;
+
+&lt;p&gt;As announced &lt;a href="/changes/2017-07-19-removal-of-integrations-routes/"&gt;in July&lt;/a&gt;, URLs that reference "integration" or "integrations" will be removed entirely and the temporary redirection we've been performing will cease to function on November 22.&lt;/p&gt;
+
+&lt;p&gt;For example, a URL of &lt;code&gt;https://github.com/integrations/super-ci/installations/new&lt;/code&gt; will no longer work. The correct format for that URL is &lt;code&gt;https://github.com/apps/super-ci/installations/new&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="questions" class="anchor" href="#questions" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Questions?&lt;/h4&gt;
+
+&lt;p&gt;If you have questions about these upcoming deprecations, feel free to reach out on the &lt;a href="https://platform.github.community/c/integrations"&gt;Platform forum&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-10-20:/changes/2017-10-20-additional-endpoints-for-github-apps/</id>
+    <title type="html">Additional endpoints available for GitHub Apps</title>
+    <published>2017-10-20T07:00:00Z</published>
+    <updated>2017-10-20T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-10-20-additional-endpoints-for-github-apps/"/>
+    <content type="html">&lt;p&gt;As part of the ongoing audit of the availability of REST API endpoints for &lt;a href="/changes/2017-05-22-github-apps-production-ship/"&gt;GitHub Apps&lt;/a&gt;, we've enabled another batch of endpoints.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="recently-enabled-endpoints" class="anchor" href="#recently-enabled-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Recently enabled endpoints&lt;/h4&gt;
+
+&lt;p&gt;The newly enabled endpoints available now include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#start-an-import"&gt;&lt;code&gt;PUT /repos/:owner/:repo/import&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#get-import-progress"&gt;&lt;code&gt;GET /repos/:owner/:repo/import&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#update-existing-import"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/import&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#cancel-an-import"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/import&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#get-commit-authors"&gt;&lt;code&gt;GET /repos/:owner/:repo/import/authors&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#map-a-commit-author"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/import/authors/:author_id&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#get-large-files"&gt;&lt;code&gt;GET /repos/:owner/:repo/import/large_files&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#set-git-lfs-preference"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/import/lfs&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/events/#list-repository-events"&gt;&lt;code&gt;GET /repos/:owner/:repo/events&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/orgs/outside_collaborators/#list-outside-collaborators"&gt;&lt;code&gt;GET /orgs/:org/outside_collaborators&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/orgs/outside_collaborators/#remove-outside-collaborator"&gt;&lt;code&gt;DELETE /orgs/:org/outside_collaborators/:user&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/orgs/outside_collaborators/#convert-member-to-outside-collaborator"&gt;&lt;code&gt;PUT /orgs/:org/outside_collaborators/:user&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/feeds/#list-feeds"&gt;&lt;code&gt;GET /feeds&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/markdown/#render-an-arbitrary-markdown-document"&gt;&lt;code&gt;POST /markdown&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/markdown/#render-a-markdown-document-in-raw-mode"&gt;&lt;code&gt;POST /markdown/raw&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/meta/"&gt;&lt;code&gt;GET /meta&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/timeline/#list-events-for-an-issue"&gt;&lt;code&gt;GET /repos/:owner/:repo/issues/:issue_number/timeline&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/#list-user-repositories"&gt;&lt;code&gt;GET /users/:username/repos&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Additionally, the following endpoints are now available for &lt;a href="/apps/building-integrations/setting-up-and-registering-github-apps/identifying-users-for-github-apps/"&gt;user-to-server&lt;/a&gt; requests:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#start-an-import"&gt;&lt;code&gt;PUT /repos/:owner/:repo/import&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#update-existing-import"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/import&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#cancel-an-import"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/import&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#map-a-commit-author"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/import/authors/:author_id&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/migration/source_imports/#set-git-lfs-preference"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/import/lfs&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/comments/#create-a-commit-comment"&gt;&lt;code&gt;POST /repos/:owner/:repo/commits/:sha/comments&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/comments/#update-a-commit-comment"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/comments/:id&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/comments/#delete-a-commit-comment"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/comments/:id&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/#create"&gt;&lt;code&gt;POST /orgs/:org/repos&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/#create"&gt;&lt;code&gt;POST /user/repos&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/#list-teams"&gt;&lt;code&gt;GET /repos/:owner/:repo/teams&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/comments/#delete-a-comment"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/issues/comments/:id&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/comments/#edit-a-comment"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/issues/comments/:id&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/assignees/#remove-assignees-from-an-issue"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/issues/:number/assignees&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/assignees/#add-assignees-to-an-issue"&gt;&lt;code&gt;POST /repos/:owner/:repo/issues/:number/assignees&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/#lock-an-issue"&gt;&lt;code&gt;PUT /repos/:owner/:repo/issues/:number/lock&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/#unlock-an-issue"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/issues/:number/lock&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/labels/#remove-all-labels-from-an-issue"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/issues/:id/labels&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/labels/#replace-all-labels-for-an-issue"&gt;&lt;code&gt;PUT /repos/:owner/:repo/issues/:id/labels&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/labels/#remove-a-label-from-an-issue"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/issues/:id/labels/(.*?)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/labels/#create-a-label"&gt;&lt;code&gt;POST /repos/:owner/:repo/labels&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/labels/#delete-a-label"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/labels/(.*?)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/labels/#update-a-label"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/labels/(.*?)&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/orgs/outside_collaborators/#remove-outside-collaborator"&gt;&lt;code&gt;DELETE /orgs/:org/outside_collaborators/:user&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/orgs/outside_collaborators/#convert-member-to-outside-collaborator"&gt;&lt;code&gt;PUT /orgs/:org/outside_collaborators/:user&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/feeds/#list-feeds"&gt;&lt;code&gt;GET /feeds&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#create-reaction-for-a-commit-comment"&gt;&lt;code&gt;POST /repos/:owner/:repo/comments/:id/reactions&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#create-reaction-for-an-issue"&gt;&lt;code&gt;POST /repos/:owner/:repo/issues/:number/reactions&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#create-reaction-for-an-issue-comment"&gt;&lt;code&gt;POST /repos/:owner/:repo/issues/comments/:id/reactions&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#list-reactions-for-a-pull-request-review-comment"&gt;&lt;code&gt;GET /repos/:owner/:repo/pulls/comments/:id/reactions&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#create-reaction-for-a-pull-request-review-comment"&gt;&lt;code&gt;POST /repos/:owner/:repo/pulls/comments/:id/reactions&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/reactions/#delete-a-reaction"&gt;&lt;code&gt;DELETE /reactions/:id&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/collaborators/#add-user-as-a-collaborator"&gt;&lt;code&gt;PUT /repositories/:repository_id/collaborators/:username&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/collaborators/#remove-user-as-a-collaborator"&gt;&lt;code&gt;DELETE /repositories/:repository_id/collaborators/:username&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/#delete-a-repository"&gt;&lt;code&gt;DELETE /repos/:owner/:repo&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/#edit"&gt;&lt;code&gt;PATCH /repos/:owner/:repo&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/merging/#perform-a-merge"&gt;&lt;code&gt;POST /repos/:owner/:repo/merges&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="how-can-i-try-it" class="anchor" href="#how-can-i-try-it" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;How can I try it?&lt;/h4&gt;
+
+&lt;p&gt;To access this functionality, you’ll need to provide the following custom &lt;a href="/v3/media"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.machine-man-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;
+&lt;a id="what-about-other-endpoints" class="anchor" href="#what-about-other-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;What about other endpoints?&lt;/h4&gt;
+
+&lt;p&gt;We're actively working on enabling more endpoints. Check back on the developer blog for updates when new batches become available. If you have specific requests or feedback, come chat with us in the &lt;a href="https://platform.github.community/c/integrations"&gt;Platform forum&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-10-13:/changes/2017-10-13-update-the-nested-teams-preview/</id>
+    <title type="html">Nested Teams API Preview has new privacy defaults</title>
+    <published>2017-10-13T07:00:00Z</published>
+    <updated>2017-10-13T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-10-13-update-the-nested-teams-preview/"/>
+    <content type="html">&lt;p&gt;Today we're releasing a change to the Nested Teams API Preview: the default privacy when &lt;a href="/v3/teams/#create-team"&gt;creating&lt;/a&gt; a nested team is now &lt;code&gt;closed&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="how-can-i-try-it" class="anchor" href="#how-can-i-try-it" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;How can I try it?&lt;/h4&gt;
+
+&lt;p&gt;To access the Nested Teams APIs during the preview period, you must provide a custom &lt;a href="/v3/media"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.hellcat-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;
+&lt;a id="give-us-your-feedback" class="anchor" href="#give-us-your-feedback" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Give us your feedback&lt;/h2&gt;
+
+&lt;p&gt;If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Nested+Teams+API"&gt;let us know&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-10-12:/changes/2017-10-12-git-signing/</id>
+    <title type="html">Git Signing APIs are now official</title>
+    <published>2017-10-12T07:00:00Z</published>
+    <updated>2017-10-12T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-10-12-git-signing/"/>
+    <content type="html">&lt;p&gt;The &lt;a href="/changes/2016-04-04-git-signing-api-preview/"&gt;Git Signing APIs&lt;/a&gt; are now part of the official GitHub REST API v3. Signature verification metadata will now be included in commit and tag payloads, and user GPG keys can be created, destroyed, and fetched.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;[Updated 11-21-17]&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a id="preview-media-type-no-longer-required" class="anchor" href="#preview-media-type-no-longer-required" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Preview media type no longer required&lt;/h3&gt;
+
+&lt;p&gt;If you used the Git Signing API during the preview period, you needed to provide this custom media type in the Accept header:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;application/vnd.github.cryptographer-preview&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;As of today, you no longer need to pass this custom media type. Instead, we recommend that you specify v3 as the version in the Accept header:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;application/vnd.github.v3+json&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;[End of updated content]&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For more information, see the &lt;a href="/v3/git/commits/#commit-signature-verification"&gt;Git Commit&lt;/a&gt;, &lt;a href="/v3/git/tags/#tag-signature-verification"&gt;Git Tag&lt;/a&gt;, &lt;a href="/v3/repos/commits/#commit-signature-verification"&gt;Repository Commit&lt;/a&gt;, and &lt;a href="/v3/users/gpg_keys/"&gt;User GPG Keys&lt;/a&gt; documentation.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Git+Signing+APIs"&gt;let us know&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-10-05:/changes/2017-10-05-introducing-the-graphql-changelog/</id>
+    <title type="html">Introducing the GraphQL Changelog</title>
+    <published>2017-10-05T07:00:00Z</published>
+    <updated>2017-10-05T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-10-05-introducing-the-graphql-changelog/"/>
+    <content type="html">&lt;p&gt;GitHub's GraphQL schema changes multiple times a day. We have some neat automation to automatically update &lt;a href="/v4/reference/"&gt;our reference documentation&lt;/a&gt; whenever the schema is modified, but there wasn't an easy way to visualize the day-to-day additions and modifications to the schema.&lt;/p&gt;
+
+&lt;p&gt;We're now happy to announce &lt;a href="/v4/changelog/"&gt;the GraphQL Changelog&lt;/a&gt;. Every day, around 4pm PST, Hubot will automatically compose a post detailing the GraphQL additions made in the last day. We've also got &lt;a href="/graphql_changes.atom"&gt;an RSS feed&lt;/a&gt; of this changelog if you want to subscribe. To support this workflow, we're using the very awesome &lt;a href="https://github.com/xuorig/graphql-schema_comparator"&gt;graphql-schema_comparator&lt;/a&gt; gem, which provides a diff between two schemas.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, feel free to &lt;a href="https://github.com/support?form%5Bsubject%5D=About+that+GraphQL+changelog"&gt;contact us&lt;/a&gt;!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-10-02:/changes/2017-10-02-breaking-changes-to-projects-api-preview-and-webhooks-date-format/</id>
+    <title type="html">Breaking changes to projects API preview and webhook date format</title>
+    <published>2017-10-02T07:00:00Z</published>
+    <updated>2017-10-02T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-10-02-breaking-changes-to-projects-api-preview-and-webhooks-date-format/"/>
+    <content type="html">&lt;p&gt;As previously announced on &lt;a href="/changes/2017-09-01-breaking-changes-to-projects-api-preview-and-webhooks-date-format/"&gt;September 1st&lt;/a&gt;,
+the format of the &lt;code&gt;created_at&lt;/code&gt; and &lt;code&gt;updated_at&lt;/code&gt; fields in the
+&lt;a href="/v3/projects"&gt;projects API preview&lt;/a&gt; and &lt;a href="/v3/activity/events/types/#projectcardevent"&gt;project webhook payloads&lt;/a&gt;
+have been changed to be consistent with the standard &lt;code&gt;YYYY-MM-DDTHH:MM:SSZ&lt;/code&gt; ISO
+8601 format used by all other APIs and webhooks.&lt;/p&gt;
+
+&lt;p&gt;Previously, project webhook payloads would include these fields as an integer
+number of seconds:&lt;/p&gt;
+
+&lt;pre class="highlight highlight-json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"action"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"created"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"project_card"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="nt"&gt;"created_at"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1503590773&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="nt"&gt;"updated_at"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1503590773&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;And project APIs would include these fields with milliseconds that were always
+zero:&lt;/p&gt;
+
+&lt;pre class="highlight highlight-json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"url"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"https://api.github.com/projects/1002604"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"id"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1002604&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"created_at"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"2017-08-24T15:56:15.000Z"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nt"&gt;"updated_at"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"2017-08-24T15:56:15.000Z"&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Starting today, these fields are returned as &lt;code&gt;YYYY-MM-DDTHH:MM:SSZ&lt;/code&gt; formatted
+strings in all projects APIs and project, card, and column webhook payloads.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or feedback, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Breaking+Projects+API+Date+Format"&gt;let us know&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-09-21:/changes/2017-09-21-discontinue-support-for-weak-cryptographic-standards-update/</id>
+    <title type="html">Weak cryptographic standards deprecation update</title>
+    <published>2017-09-21T07:00:00Z</published>
+    <updated>2017-09-21T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-09-21-discontinue-support-for-weak-cryptographic-standards-update/"/>
+    <content type="html">&lt;p&gt;GitHub announced the deprecation, and eventual disablement, of our use of the below cryptographic standards in a &lt;a href="https://githubengineering.com/crypto-deprecation-notice/"&gt;prior post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;code&gt;TLSv1&lt;/code&gt;/&lt;code&gt;TLSv1.1&lt;/code&gt; - This applies to all HTTPS connections, including web, API, and Git connections to &lt;a href="https://github.com"&gt;https://github.com&lt;/a&gt; and &lt;a href="https://api.github.com"&gt;https://api.github.com&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;diffie-hellman-group1-sha1&lt;/code&gt; - This applies to all SSH connections to github.com.&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;diffie-hellman-group14-sha1&lt;/code&gt; - This applies to all SSH connections to github.com.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since publication, we have enabled &lt;code&gt;diffie-hellman-group-exchange-sha256&lt;/code&gt;, which will allow the majority of SSH clients to seamlessly transition away from the deprecated algorithms. As noted in the original announcement, &lt;strong&gt;we plan to disable &lt;code&gt;TLSv1&lt;/code&gt;/&lt;code&gt;TLSv1.1&lt;/code&gt;, &lt;code&gt;diffie-hellman-group1-sha1&lt;/code&gt;, and &lt;code&gt;diffie-hellman-group14-sha1&lt;/code&gt; on February 1, 2018&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;For full details on the deprecation update, please see our &lt;a href="https://githubengineering.com/crypto-deprecation-notice-update-1/"&gt;GitHub Engineering blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As always, if you have any questions, please &lt;a href="https://github.com/contact?form%5Bsubject%5D=Crypto+deprecation+notice"&gt;get in touch&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:developer.github.com,2017-09-21:/changes/2017-09-21-additional-endpoints-for-github-apps/</id>
+    <title type="html">Additional endpoints available for GitHub Apps</title>
+    <published>2017-09-21T07:00:00Z</published>
+    <updated>2017-09-21T07:00:00Z</updated>
+    <link rel="alternate" href="https://developer.github.com/changes/2017-09-21-additional-endpoints-for-github-apps/"/>
+    <content type="html">&lt;p&gt;We've begun an audit of the availability of REST API endpoints for &lt;a href="/changes/2017-05-22-github-apps-production-ship/"&gt;GitHub Apps&lt;/a&gt;. Additional endpoints will be enabled in batches over the course of the next few months.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id="recently-enabled-endpoints" class="anchor" href="#recently-enabled-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Recently enabled endpoints&lt;/h4&gt;
+
+&lt;p&gt;The first batch of newly enabled endpoints, available now, include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/#root-endpoint"&gt;&lt;code&gt;GET /&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/emojis/"&gt;&lt;code&gt;GET /emojis&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/events/#list-public-events"&gt;&lt;code&gt;GET /events&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/events/#list-public-events-for-a-network-of-repositories"&gt;&lt;code&gt;GET /networks/:owner/:repo/events&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/events/#list-public-events-for-an-organization"&gt;&lt;code&gt;GET /orgs/:org/events&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/events/#list-events-performed-by-a-user"&gt;&lt;code&gt;GET /users/:username/events&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/events/#list-public-events-performed-by-a-user"&gt;&lt;code&gt;GET /users/:username/events/public&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/events/#list-events-that-a-user-has-received"&gt;&lt;code&gt;GET /users/:username/received_events&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/activity/events/#list-public-events-that-a-user-has-received"&gt;&lt;code&gt;GET /users/:username/received_events/public&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/community/#retrieve-community-profile-metrics"&gt;&lt;code&gt;GET /repos/:owner/:name/community/profile&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/codes_of_conduct/#get-the-contents-of-a-repositorys-code-of-conduct"&gt;&lt;code&gt;GET /repos/:owner/:repo/community/code_of_conduct&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#get-branch-protection"&gt;&lt;code&gt;GET /repos/:owner/:repo/branches/:branch/protection&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#get-restrictions-of-protected-branch"&gt;&lt;code&gt;GET /repos/:owner/:repo/branches/:branch/protection/restrictions&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#list-user-restrictions-of-protected-branch"&gt;&lt;code&gt;GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#list-team-restrictions-of-protected-branch"&gt;&lt;code&gt;GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#get-pull-request-review-enforcement-of-protected-branch"&gt;&lt;code&gt;GET /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#get-admin-enforcement-of-protected-branch"&gt;&lt;code&gt;GET /repos/:owner/:repo/branches/:branch/protection/enforce_admins&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#update-branch-protection"&gt;&lt;code&gt;PUT /repos/:owner/:repo/branches/:branch/protection&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-branch-protection"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#update-required-status-checks-of-protected-branch"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/branches/:branch/protection/required_status_checks&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-required-status-checks-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#add-required-status-checks-contexts-of-protected-branch"&gt;&lt;code&gt;POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#replace-required-status-checks-contexts-of-protected-branch"&gt;&lt;code&gt;PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-required-status-checks-contexts-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-restrictions-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#replace-user-restrictions-of-protected-branch"&gt;&lt;code&gt;PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/users&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#add-user-restrictions-of-protected-branch"&gt;&lt;code&gt;POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-user-restrictions-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#replace-team-restrictions-of-protected-branch"&gt;&lt;code&gt;PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#add-team-restrictions-of-protected-branch"&gt;&lt;code&gt;POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-team-restrictions-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#update-pull-request-review-enforcement-of-protected-branch"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-pull-request-review-enforcement-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#add-admin-enforcement-of-protected-branch"&gt;&lt;code&gt;POST /repos/:owner/:repo/branches/:branch/protection/enforce_admins&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-admin-enforcement-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/enforce_admins&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Additionally, the following endpoints are now available for &lt;a href="/apps/building-integrations/setting-up-and-registering-github-apps/identifying-users-for-github-apps/"&gt;user-to-server&lt;/a&gt; requests:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/v3/git/trees/#create-a-tree"&gt;&lt;code&gt;POST /repos/:owner/:repo/git/trees&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/refs/#create-a-reference"&gt;&lt;code&gt;POST /repos/:owner/:repo/git/refs&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/blobs/#create-a-blob"&gt;&lt;code&gt;POST /repos/:owner/:repo/git/blobs&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/commits/#create-a-commit"&gt;&lt;code&gt;POST /repos/:owner/:repo/git/commits&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/tags/#create-a-tag-object"&gt;&lt;code&gt;POST /repos/:owner/:repo/git/tags&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/refs/#update-a-reference"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/git/refs/:ref&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/git/refs/#delete-a-reference"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/git/refs/:ref&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/#replace-all-topics-for-a-repository"&gt;&lt;code&gt;PUT /repos/:owner/:repo/topics&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="/v3/repos/contents/#create-a-file"&gt;&lt;code&gt;PUT /repos/:owner/:repo/contents/:path&lt;/code&gt;&lt;/a&gt; (create)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="/v3/repos/contents/#update-a-file"&gt;&lt;code&gt;PUT /repos/:owner/:repo/contents/:path&lt;/code&gt;&lt;/a&gt; (update)&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/contents/#delete-a-file"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/contents/:path&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/statuses/#create-a-status"&gt;&lt;code&gt;POST /repos/:owner/:repo/statuses/:sha&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#update-branch-protection"&gt;&lt;code&gt;PUT /repos/:owner/:repo/branches/:branch/protection&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-branch-protection"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#update-required-status-checks-of-protected-branch"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/branches/:branch/protection/required_status_checks&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-required-status-checks-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#add-required-status-checks-contexts-of-protected-branch"&gt;&lt;code&gt;POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#replace-required-status-checks-contexts-of-protected-branch"&gt;&lt;code&gt;PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-required-status-checks-contexts-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-restrictions-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#replace-user-restrictions-of-protected-branch"&gt;&lt;code&gt;PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/users&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#add-user-restrictions-of-protected-branch"&gt;&lt;code&gt;POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-user-restrictions-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#replace-team-restrictions-of-protected-branch"&gt;&lt;code&gt;PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#add-team-restrictions-of-protected-branch"&gt;&lt;code&gt;POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-team-restrictions-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#update-pull-request-review-enforcement-of-protected-branch"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-pull-request-review-enforcement-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#add-admin-enforcement-of-protected-branch"&gt;&lt;code&gt;POST /repos/:owner/:repo/branches/:branch/protection/enforce_admins&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/repos/branches/#remove-admin-enforcement-of-protected-branch"&gt;&lt;code&gt;DELETE /repos/:owner/:repo/branches/:branch/protection/enforce_admins&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/v3/issues/#edit-an-issue"&gt;&lt;code&gt;PATCH /repos/:owner/:repo/issues/:number&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;
+&lt;a id="how-can-i-try-it" class="anchor" href="#how-can-i-try-it" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;How can I try it?&lt;/h4&gt;
+
+&lt;p&gt;To access this functionality, you’ll need to provide the following custom &lt;a href="/v3/media"&gt;media type&lt;/a&gt; in the &lt;code&gt;Accept&lt;/code&gt; header:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;application/vnd.github.machine-man-preview+json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;
+&lt;a id="what-about-other-endpoints" class="anchor" href="#what-about-other-endpoints" aria-hidden="true"&gt;&lt;span aria-hidden="true" class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;What about other endpoints?&lt;/h4&gt;
+
+&lt;p&gt;Check back to the developer blog to stay updated when new batches are available. If you have specific requests or feedback, come chat with us in the &lt;a href="https://platform.github.community/c/integrations"&gt;Platform forum&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+</feed>

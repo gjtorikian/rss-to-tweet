@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 
 gem 'nokogiri', '~> 1.8'
 gem 'rake'
-gem 'sinatra', '1.4'
+gem 'sinatra', '~> 2.0'
+gem 'twitter', '~> 6.2'
 gem 'unicorn', '~> 4.8'
 
 group :development do

@@ -1,14 +1,13 @@
 begin
   require 'dotenv'
+  require 'pry'
 rescue LoadError
 end
 
 require 'sinatra/base'
 require 'json'
-# require 'openssl'
-# require 'base64'
 require 'nokogiri'
-require 'open-uri'
+require 'twitter'
 
 require_relative './helpers'
 
@@ -17,6 +16,8 @@ class RssToTweet < Sinatra::Base
   Dotenv.load if !Sinatra::Base.production?
 
   helpers Helpers
+
+  TWEET_SIZE = 280
 
   get '/' do
     'This server is running!'
@@ -50,13 +51,31 @@ class RssToTweet < Sinatra::Base
 
     doc = Nokogiri::HTML(open(ENV['RSS_PATH']))
 
-    client = Twitter::REST::Client.new do |config|
+    updated_date = doc.xpath("//#{ENV['DATE_PATH']}").text
+
+    halt 202, "Date hasn't changed, aborting" if ENV['LAST_CHECKED_DATE'] == updated_date
+
+    # date is either empty, or fresher
+    ENV['LAST_CHECKED_DATE'] = updated_date
+    title = doc.xpath("//#{ENV['ENTRY_TITLE_PATH']}").text
+    url = doc.xpath("//#{ENV['ENTRY_URL_PATH']}").text
+    tweet = "#{title} #{url}"
+
+    if tweet.size > TWEET_SIZE
+      diff = TWEET_SIZE - url.size - 5
+      title = "#{title[0..diff]}..."
+      tweet = "#{title} #{url}"
+    end
+
+    client = ::Twitter::REST::Client.new do |config|
       config.consumer_key        = ENV['CONSUMER_KEY']
       config.consumer_secret     = ENV['CONSUMER_SECRET']
       config.access_token        = ENV['ACCESS_TOKEN']
       config.access_token_secret = ENV['ACCESS_SECRET']
     end
 
-    client.update("I'm tweeting with @gem!")
+    client.update(tweet)
+
+    status 200
   end
 end

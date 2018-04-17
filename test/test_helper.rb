@@ -11,6 +11,8 @@ require 'webmock/minitest'
 # Load the sinatra application
 require_relative '../lib/app'
 
+WebMock.disable_net_connect!
+
 File.rename('.env.example', '.env') if ENV['CI']
 
 def with_env(hash)

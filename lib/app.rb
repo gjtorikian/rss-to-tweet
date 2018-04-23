@@ -10,6 +10,7 @@ require 'sinatra/base'
 require 'json'
 require 'nokogiri'
 require 'twitter'
+require 'open-uri'
 
 require_relative './helpers'
 

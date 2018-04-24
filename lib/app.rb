@@ -60,7 +60,9 @@ class RssToTweet < Sinatra::Base
 
     doc = Nokogiri::HTML(open(ENV['RSS_PATH']))
 
-    build_commit_info = JSON.parse(client.commit(repo, commit))
+    build_commit_info = client.commit(repo, commit)
+
+    build_commit_info = JSON.parse(build_commit_info) if build_commit_info.is_a?(String)
 
     modified_files = build_commit_info['files'].select do |f|
       f['status'] == 'added'

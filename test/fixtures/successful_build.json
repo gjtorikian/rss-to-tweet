@@ -1,5 +1,8 @@
 {
   "build": {
     "status": "built"
+  },
+  "repository": {
+    "full_name": "gjtorikian/testing"
   }
 }

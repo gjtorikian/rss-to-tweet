@@ -14,3 +14,4 @@ You'll need to set up several environment variables for this app to work:
 | `ENTRY_TITLE_PATH` | The XPath to the latest title in the `RSS_PATH`. | `//feed/entry[1]/title`
 | `ENTRY_URL_PATH` | The XPath to the latest URL in the `RSS_PATH`. | `//feed/entry[1]/link/@href`
 | `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN`, `ACCESS_TOKEN_SECRET` |  The access tokens obtained from a new Twitter OAuth app. | Varying random strings.
+| `MACHINE_USER_TOKEN` | This is [the access token the server will act as](https://help.github.com/articles/creating-an-access-token-for-command-line-use) when syncing between the repositories. | Random string.

@@ -7,6 +7,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require 'minitest/focus'
 require 'webmock/minitest'
+require 'mocha/minitest'
 
 # Load the sinatra application
 require_relative '../lib/app'

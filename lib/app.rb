@@ -11,6 +11,7 @@ require 'json'
 require 'nokogiri'
 require 'twitter'
 require 'open-uri'
+require 'octokit'
 
 require_relative './helpers'
 
@@ -52,16 +53,27 @@ class RssToTweet < Sinatra::Base
       halt 202, "Page build status was not `built`, it was `#{status}`, aborting"
     end
 
+    client = Octokit::Client.new(access_token: ENV['MACHINE_USER_TOKEN'])
+
+    commit = payload['build']['commit']
+    repo = payload['repository']['full_name']
+
     doc = Nokogiri::HTML(open(ENV['RSS_PATH']))
 
-    updated_date = doc.xpath("//#{ENV['DATE_PATH']}").text
+    build_commit_info = JSON.parse(client.commit(repo, commit))
 
-    halt 202, "Previous date (#{ENV['LAST_CHECKED_DATE']}) hasn't changed (#{updated_date}), aborting" if ENV['LAST_CHECKED_DATE'] == updated_date
+    modified_files = build_commit_info['files'].select do |f|
+      f['status'] == 'added'
+    end
 
-    # date is either empty, or fresher
-    ENV['LAST_CHECKED_DATE'] = updated_date
+    unless modified_files.any?
+      halt 202, 'Build did not add any files, aborting'
+    end
 
-    puts "Setting check date to now (#{ENV['LAST_CHECKED_DATE']})"
+    # TODO: ugh extract this hardcoded filename out, probably
+    unless modified_files.any? { |f| f['filename'] = %r{\Achanges/\d{4}-\d{2}-\d{1}} }
+      halt 202, 'Build did not add any files for the RSS feed, aborting'
+    end
 
     title = doc.xpath("//#{ENV['ENTRY_TITLE_PATH']}").text
     url = doc.xpath("//#{ENV['ENTRY_URL_PATH']}").text

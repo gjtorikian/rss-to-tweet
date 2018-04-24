@@ -56,10 +56,13 @@ class RssToTweet < Sinatra::Base
 
     updated_date = doc.xpath("//#{ENV['DATE_PATH']}").text
 
-    halt 202, "Date hasn't changed, aborting" if ENV['LAST_CHECKED_DATE'] == updated_date
+    halt 202, "Previous date (#{ENV['LAST_CHECKED_DATE']}) hasn't changed (#{updated_date}), aborting" if ENV['LAST_CHECKED_DATE'] == updated_date
 
     # date is either empty, or fresher
     ENV['LAST_CHECKED_DATE'] = updated_date
+
+    puts "Setting check date to now (#{ENV['LAST_CHECKED_DATE']})"
+
     title = doc.xpath("//#{ENV['ENTRY_TITLE_PATH']}").text
     url = doc.xpath("//#{ENV['ENTRY_URL_PATH']}").text
     tweet = "#{title} #{url}"

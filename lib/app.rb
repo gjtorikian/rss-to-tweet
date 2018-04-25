@@ -53,6 +53,7 @@ class RssToTweet < Sinatra::Base
       halt 202, "Page build status was not `built`, it was `#{status}`, aborting"
     end
 
+    Octokit.auto_paginate = true
     client = Octokit::Client.new(access_token: ENV['MACHINE_USER_TOKEN'])
 
     commit = payload['build']['commit']

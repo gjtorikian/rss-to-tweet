@@ -64,16 +64,16 @@ class RssToTweet < Sinatra::Base
 
     build_commit_info = JSON.parse(build_commit_info) if build_commit_info.is_a?(String)
 
-    modified_files = build_commit_info['files'].select do |f|
+    added_files = build_commit_info['files'].select do |f|
       f['status'] == 'added'
     end
 
-    unless modified_files.any?
+    unless added_files.any?
       halt 202, 'Build did not add any files, aborting'
     end
 
     # TODO: ugh extract this hardcoded filename out, probably
-    unless modified_files.any? { |f| f['filename'] = %r{\Achanges/\d{4}-\d{2}-\d{1}} }
+    unless added_files.any? { |f| f['filename'] = %r{\Achanges/\d{4}-\d{2}-\d{1}} }
       halt 202, 'Build did not add any files for the RSS feed, aborting'
     end
 

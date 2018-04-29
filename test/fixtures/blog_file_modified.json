@@ -8,9 +8,9 @@
       "additions": 2,
       "deletions": 0,
       "changes": 2,
-      "blob_url": "https://github.com/github/internal-developer.github.com/blob/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/changes/2018-03-16-team-discussion-reactions-api-and-apps-endpoints/index.html",
-      "raw_url": "https://github.com/github/internal-developer.github.com/raw/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/changes/2018-03-16-team-discussion-reactions-api-and-apps-endpoints/index.html",
-      "contents_url": "https://api.github.com/repos/github/internal-developer.github.com/contents/changes/2018-03-16-team-discussion-reactions-api-and-apps-endpoints/index.html?ref=347db392d3a8a2ff19cb1a7ab88a27c8a327775a",
+      "blob_url": "https://github.com/github/internal/blob/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/changes/2018-03-16-team-discussion-reactions-api-and-apps-endpoints/index.html",
+      "raw_url": "https://github.com/github/internal/raw/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/changes/2018-03-16-team-discussion-reactions-api-and-apps-endpoints/index.html",
+      "contents_url": "https://api.github.com/repos/github/internal/contents/changes/2018-03-16-team-discussion-reactions-api-and-apps-endpoints/index.html?ref=347db392d3a8a2ff19cb1a7ab88a27c8a327775a",
       "patch": "@@ -99,6 +99,8 @@ <h2 class=\"title\">\n \n <p>Over the course of the preview period we may change aspects of the API based on developer feedback. If we do, we will not provide any advance notice of the changes, but we will announce them here on the developer blog.</p>\n \n+<p><strong><em>[Updated 04-20-18]</em></strong> OAuth access tokens now require the <code>write:discussion</code> scope when <a href=\"/v3/reactions/#create-reaction-for-a-team-discussion\">creating a reaction to a discussion</a>, <a href=\"/v3/reactions/#create-reaction-for-a-team-discussion-comment\">creating a reaction to a comment</a>, or <a href=\"/v3/reactions/#delete-a-reaction\">deleting a reaction</a>.</p>\n+\n <h2>\n <a id=\"new-rest-api-endpoints\" class=\"anchor\" href=\"#new-rest-api-endpoints\" aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"octicon octicon-link\"></span></a>New REST API endpoints</h2>\n "
     },
     {
@@ -20,9 +20,9 @@
       "additions": 2,
       "deletions": 0,
       "changes": 2,
-      "blob_url": "https://github.com/github/internal-developer.github.com/blob/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/changes/index.html",
-      "raw_url": "https://github.com/github/internal-developer.github.com/raw/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/changes/index.html",
-      "contents_url": "https://api.github.com/repos/github/internal-developer.github.com/contents/changes/index.html?ref=347db392d3a8a2ff19cb1a7ab88a27c8a327775a",
+      "blob_url": "https://github.com/github/internal/blob/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/changes/index.html",
+      "raw_url": "https://github.com/github/internal/raw/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/changes/index.html",
+      "contents_url": "https://api.github.com/repos/github/internal/contents/changes/index.html?ref=347db392d3a8a2ff19cb1a7ab88a27c8a327775a",
       "patch": "@@ -410,6 +410,8 @@ <h2 class=\"title\">\n \n <p>Over the course of the preview period we may change aspects of the API based on developer feedback. If we do, we will not provide any advance notice of the changes, but we will announce them here on the developer blog.</p>\n \n+<p><strong><em>[Updated 04-20-18]</em></strong> OAuth access tokens now require the <code>write:discussion</code> scope when <a href=\"/v3/reactions/#create-reaction-for-a-team-discussion\">creating a reaction to a discussion</a>, <a href=\"/v3/reactions/#create-reaction-for-a-team-discussion-comment\">creating a reaction to a comment</a>, or <a href=\"/v3/reactions/#delete-a-reaction\">deleting a reaction</a>.</p>\n+\n <h2>\n <a id=\"new-rest-api-endpoints\" class=\"anchor\" href=\"#new-rest-api-endpoints\" aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"octicon octicon-link\"></span></a>\n <a id=\"new-rest-api-endpoints\" class=\"anchor\" href=\"#new-rest-api-endpoints\" aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"octicon octicon-link\"></span></a>New REST API endpoints</h2>"
     },
     {
@@ -32,9 +32,9 @@
       "additions": 1,
       "deletions": 1,
       "changes": 2,
-      "blob_url": "https://github.com/github/internal-developer.github.com/blob/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/search/search-index.json",
-      "raw_url": "https://github.com/github/internal-developer.github.com/raw/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/search/search-index.json",
-      "contents_url": "https://api.github.com/repos/github/internal-developer.github.com/contents/search/search-index.json?ref=347db392d3a8a2ff19cb1a7ab88a27c8a327775a"
+      "blob_url": "https://github.com/github/internal/blob/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/search/search-index.json",
+      "raw_url": "https://github.com/github/internal/raw/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/search/search-index.json",
+      "contents_url": "https://api.github.com/repos/github/internal/contents/search/search-index.json?ref=347db392d3a8a2ff19cb1a7ab88a27c8a327775a"
     },
     {
       "sha": "047bb7b9f6f51c62bbc67aadafa7dcbe63edf186",
@@ -43,9 +43,9 @@
       "additions": 3,
       "deletions": 3,
       "changes": 6,
-      "blob_url": "https://github.com/github/internal-developer.github.com/blob/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/v3/reactions/index.html",
-      "raw_url": "https://github.com/github/internal-developer.github.com/raw/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/v3/reactions/index.html",
-      "contents_url": "https://api.github.com/repos/github/internal-developer.github.com/contents/v3/reactions/index.html?ref=347db392d3a8a2ff19cb1a7ab88a27c8a327775a",
+      "blob_url": "https://github.com/github/internal/blob/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/v3/reactions/index.html",
+      "raw_url": "https://github.com/github/internal/raw/347db392d3a8a2ff19cb1a7ab88a27c8a327775a/v3/reactions/index.html",
+      "contents_url": "https://api.github.com/repos/github/internal/contents/v3/reactions/index.html?ref=347db392d3a8a2ff19cb1a7ab88a27c8a327775a",
       "patch": "@@ -1174,7 +1174,7 @@ <h2>\n \n </div>\n \n-<p>Create a reaction to a <a href=\"/v3/teams/discussions/\">team discussion</a>. OAuth access tokens require the <code>read:discussion</code> <a href=\"/apps/building-oauth-apps/scopes-for-oauth-apps/\">scope</a>. A response with a <code>Status: 200 OK</code> means that you already added the reaction type to this team discussion.</p>\n+<p>Create a reaction to a <a href=\"/v3/teams/discussions/\">team discussion</a>. OAuth access tokens require the <code>write:discussion</code> <a href=\"/apps/building-oauth-apps/scopes-for-oauth-apps/\">scope</a>. A response with a <code>Status: 200 OK</code> means that you already added the reaction type to this team discussion.</p>\n \n <pre><code>POST /teams/:team_id/discussions/:discussion_number/reactions\n </code></pre>\n@@ -1361,7 +1361,7 @@ <h2>\n \n </div>\n \n-<p>Create a reaction to a <a href=\"/v3/teams/discussion_comments/\">team discussion comment</a>. OAuth access tokens require the <code>read:discussion</code> <a href=\"/apps/building-oauth-apps/scopes-for-oauth-apps/\">scope</a>. A response with a <code>Status: 200 OK</code> means that you already added the reaction type to this team discussion comment.</p>\n+<p>Create a reaction to a <a href=\"/v3/teams/discussion_comments/\">team discussion comment</a>. OAuth access tokens require the <code>write:discussion</code> <a href=\"/apps/building-oauth-apps/scopes-for-oauth-apps/\">scope</a>. A response with a <code>Status: 200 OK</code> means that you already added the reaction type to this team discussion comment.</p>\n \n <pre><code>POST /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions\n </code></pre>\n@@ -1457,7 +1457,7 @@ <h2>\n \n </div>\n \n-<p>OAuth access tokens require the <code>read:discussion</code> <a href=\"/apps/building-oauth-apps/scopes-for-oauth-apps/\">scope</a>, when deleting a <a href=\"/v3/teams/discussions/\">team discussion</a> or <a href=\"/v3/teams/discussion_comments/\">team discussion comment</a>.</p>\n+<p>OAuth access tokens require the <code>write:discussion</code> <a href=\"/apps/building-oauth-apps/scopes-for-oauth-apps/\">scope</a>, when deleting a <a href=\"/v3/teams/discussions/\">team discussion</a> or <a href=\"/v3/teams/discussion_comments/\">team discussion comment</a>.</p>\n \n <pre><code>DELETE /reactions/:id\n </code></pre>"
     }
   ]

@@ -69,12 +69,12 @@ class RssToTweet < Sinatra::Base
       f['status'] == 'added'
     end
 
-    unless added_files.any?
+    if added_files.empty?
       halt 202, 'Build did not add any files, aborting'
     end
 
     # TODO: ugh extract this hardcoded filename out, probably
-    unless added_files.any? { |f| f['filename'] = %r{\Achanges/\d{4}-\d{2}-\d{1}} }
+    unless added_files.any? { |f| f['filename'] =~ %r{\Achanges/\d{4}-\d{2}-\d{1}} }
       halt 202, 'Build did not add any files for the RSS feed, aborting'
     end
 
@@ -97,6 +97,6 @@ class RssToTweet < Sinatra::Base
 
     client.update(tweet)
 
-    status 200
+    status 204
   end
 end

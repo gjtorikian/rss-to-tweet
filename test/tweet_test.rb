@@ -49,7 +49,7 @@ class TweetTest < MiniTest::Test
       text = 'Self-serve Onboarding for the GitHub Marketplace https://developer.github.com/changes/2018-04-06-self-serve-onboarding/'
       stub_tweet(text)
       post '/rss-to-tweet', @data, { 'HTTP_X_GITHUB_EVENT' => 'page_build', 'HTTP_X_HUB_SIGNATURE' => 'sha1=bf37c5205a39205d8cb4f70579be3fd79a1a74bb' }
-      assert_equal last_response.status, 200
+      assert_equal last_response.status, 204
       assert_tweet_requested(text)
     end
   end
@@ -75,6 +75,16 @@ class TweetTest < MiniTest::Test
     end
   end
 
+  def test_tweet_when_non_blog_file_added
+    stub_get_commit.to_return(status: 200, body: load_fixture_text('other_file_added.json'), headers: {})
+
+    with_env({ RSS_PATH: File.join(fixtures_path, 'changes.atom') }) do
+      post '/rss-to-tweet', @data, { 'HTTP_X_GITHUB_EVENT' => 'page_build', 'HTTP_X_HUB_SIGNATURE' => 'sha1=bf37c5205a39205d8cb4f70579be3fd79a1a74bb' }
+      assert_equal last_response.status, 202
+      refute_tweet_requested
+    end
+  end
+
   def test_tweet_that_is_too_long
     stub_get_commit.to_return(status: 200, body: load_fixture_text('blog_file_added.json'), headers: {})
 
@@ -82,7 +92,7 @@ class TweetTest < MiniTest::Test
       text = 'Lorem ipsum dolor amet trust fund adaptogen fixie tacos, flannel man braid shabby chic godard sartorial twee you probably haven\'t heard of them edison bulb. Coloring book listicle disrupt fashion axe photo ... https://developer.github.com/changes/2018-04-06-self-serve-onboarding/'
       stub_tweet(text)
       post '/rss-to-tweet', @data, { 'HTTP_X_GITHUB_EVENT' => 'page_build', 'HTTP_X_HUB_SIGNATURE' => 'sha1=bf37c5205a39205d8cb4f70579be3fd79a1a74bb' }
-      assert_equal last_response.status, 200
+      assert_equal last_response.status, 204
       assert_tweet_requested(text)
     end
   end

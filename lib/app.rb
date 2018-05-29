@@ -59,10 +59,7 @@ class RssToTweet < Sinatra::Base
     commit = payload['build']['commit']
     repo = payload['repository']['full_name']
 
-    doc = Nokogiri::HTML(open(ENV['RSS_PATH']))
-
     build_commit_info = client.commit(repo, commit)
-
     build_commit_info = JSON.parse(build_commit_info) if build_commit_info.is_a?(String)
 
     added_files = build_commit_info['files'].select do |f|
@@ -77,6 +74,11 @@ class RssToTweet < Sinatra::Base
     unless added_files.any? { |f| f['filename'] =~ %r{\Achanges/\d{4}-\d{2}-\d{1}} }
       halt 202, 'Build did not add any files for the RSS feed, aborting'
     end
+
+    # give time to bust the cache
+    sleep 5
+
+    doc = Nokogiri::HTML(open(ENV['RSS_PATH']))
 
     title = doc.xpath("//#{ENV['ENTRY_TITLE_PATH']}").text
     url = doc.xpath("//#{ENV['ENTRY_URL_PATH']}").text

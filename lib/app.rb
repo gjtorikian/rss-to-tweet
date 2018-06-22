@@ -10,7 +10,8 @@ require 'sinatra/base'
 require 'json'
 require 'nokogiri'
 require 'twitter'
-require 'open-uri'
+require 'net/http'
+require 'uri'
 require 'octokit'
 
 require_relative './helpers'
@@ -78,7 +79,11 @@ class RssToTweet < Sinatra::Base
     # give time to bust the cache
     sleep 5
 
-    doc = Nokogiri::HTML(open(ENV['RSS_PATH']))
+    if Sinatra::Base.test?
+      doc = Nokogiri::HTML(File.read(ENV['RSS_PATH']))
+    else
+      doc = Nokogiri::HTML(Net::HTTP.get(URI.parse(ENV['RSS_PATH'])))
+    end
 
     title = doc.xpath("//#{ENV['ENTRY_TITLE_PATH']}").text
     url = doc.xpath("//#{ENV['ENTRY_URL_PATH']}").text

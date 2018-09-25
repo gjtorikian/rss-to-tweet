@@ -76,8 +76,8 @@ class RssToTweet < Sinatra::Base
       halt 202, 'Build did not add any files for the RSS feed, aborting'
     end
 
-    # give time to bust the cache
-    sleep 5
+    # give time to bust the Pages cache
+    sleep 8
 
     if Sinatra::Base.test?
       doc = Nokogiri::HTML(File.read(ENV['RSS_PATH']))

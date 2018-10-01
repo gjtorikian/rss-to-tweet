@@ -58,6 +58,8 @@ class RssToTweet < Sinatra::Base
     client = Octokit::Client.new(access_token: ENV['MACHINE_USER_TOKEN'])
 
     commit = payload['build']['commit']
+    build_created_at = payload['build']['created_at']
+    build_created_at = Date.parse(build_created_at).to_s
     repo = payload['repository']['full_name']
 
     build_commit_info = client.commit(repo, commit)
@@ -76,13 +78,17 @@ class RssToTweet < Sinatra::Base
       halt 202, 'Build did not add any files for the RSS feed, aborting'
     end
 
-    # give time to bust the Pages cache
-    sleep 8
+    rss_updated_at = ''
+    while build_created_at != rss_updated_at
+      sleep 3 # give time to bust the Pages cache
+      if Sinatra::Base.test?
+        doc = Nokogiri::HTML(File.read(ENV['RSS_PATH']))
+      else
+        doc = Nokogiri::HTML(Net::HTTP.get(URI.parse(ENV['RSS_PATH'])))
+      end
 
-    if Sinatra::Base.test?
-      doc = Nokogiri::HTML(File.read(ENV['RSS_PATH']))
-    else
-      doc = Nokogiri::HTML(Net::HTTP.get(URI.parse(ENV['RSS_PATH'])))
+      rss_updated_at = doc.xpath("//#{ENV['DATE_PATH']}").text
+      rss_updated_at = Date.parse(rss_updated_at).to_s
     end
 
     title = doc.xpath("//#{ENV['ENTRY_TITLE_PATH']}").text

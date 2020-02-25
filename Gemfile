@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'nokogiri', '~> 1.8'
+gem 'nokogiri', '~> 1.10'
 gem 'octokit', '~> 4.0'
 gem 'rake'
 gem 'sinatra', '~> 2.0'
